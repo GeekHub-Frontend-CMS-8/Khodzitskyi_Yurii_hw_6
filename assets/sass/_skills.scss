@@ -1,0 +1,19 @@
+@import "variables";
+.my-skills {
+  padding: $padding-top-bottom-big;
+  text-align: center;
+  h2 {
+    margin: 20px;
+    @include h2-section;
+  }
+  img {
+    margin: 25px 5px;
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .my-skills {
+    padding: 30px 10px;
+  }
+}
