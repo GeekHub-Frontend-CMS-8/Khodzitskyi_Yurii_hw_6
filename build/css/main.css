@@ -301,3 +301,18 @@ table {
 @media only screen and (max-width: 540px) {
   .testimonials-section {
     padding: 30px 10px; } }
+
+.facts {
+  color: #212121;
+  padding: 50px 0;
+  background-color: #f6f6f6;
+  font-family: "Asap", sans-serif; }
+  .facts h3 {
+    padding: 10px 0;
+    font-size: 30px;
+    font-weight: bold; }
+  .facts p {
+    padding-bottom: 20px;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 32px; }
