@@ -201,9 +201,52 @@ table {
     font-weight: 900;
     line-height: 49px; }
   .my-skills img {
-    margin: 25px 5px;
+    padding: 25px 10px;
     max-width: 100%; }
 
 @media only screen and (max-width: 540px) {
   .my-skills {
+    padding: 30px 10px; } }
+
+.portfolio-section {
+  padding: 110px 0;
+  background-color: #f6f6f6; }
+  .portfolio-section h2 {
+    margin: 10px 0;
+    color: #717171;
+    font-family: "Asap", sans-serif;
+    font-size: 46px;
+    font-weight: 900;
+    line-height: 49px; }
+
+.portfolio-element {
+  padding: 15px;
+  position: relative;
+  transition: 0.3s; }
+  .portfolio-element .portfolio-element-hover {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%; }
+    .portfolio-element .portfolio-element-hover a {
+      width: 55px;
+      height: 55px;
+      background-color: #fff;
+      color: #333;
+      font-size: 28px;
+      font-weight: 400; }
+  .portfolio-element img {
+    width: 100%; }
+  .portfolio-element:hover {
+    box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.5);
+    transition: 0.3s; }
+    .portfolio-element:hover .portfolio-element-hover {
+      display: flex; }
+      .portfolio-element:hover .portfolio-element-hover a {
+        text-decoration: none; }
+
+@media only screen and (max-width: 540px) {
+  .portfolio-section {
     padding: 30px 10px; } }
