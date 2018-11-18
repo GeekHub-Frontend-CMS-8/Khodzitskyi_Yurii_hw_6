@@ -31,6 +31,7 @@ header {
     padding: 6px 5px;
     color: #4d4d4d; }
     .header-nav ul li a:hover {
+      transition: 0.3s;
       border-bottom: 2px solid #4d4d4d; }
     .header-nav ul li a:active {
       border-bottom: 2px solid #4d4d4d; }
@@ -247,9 +248,32 @@ table {
       .portfolio-element:hover .portfolio-element-hover a {
         text-decoration: none; }
 
+.social-container {
+  padding-bottom: 20px;
+  border-top: 1px solid white; }
+  .social-container ul {
+    padding: 0;
+    list-style: none; }
+    .social-container ul li {
+      padding: 5px; }
+  .social-container a {
+    padding: 10px;
+    color: black;
+    background-color: white; }
+    .social-container a:hover {
+      text-decoration: none;
+      color: white;
+      background-color: #0084b4; }
+  .social-container p {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold; }
+
 @media only screen and (max-width: 540px) {
   .portfolio-section {
-    padding: 30px 10px; } }
+    padding: 30px 10px; }
+    .portfolio-section h2 {
+      font-size: 15vw; } }
 
 .testimonials-section {
   padding: 110px 0; }
@@ -269,6 +293,7 @@ table {
       max-width: 760px;
       text-transform: uppercase; }
       .testimonials-section .testimonials-card .testimonials-people img {
+        max-width: 100%;
         padding: 4px;
         float: left; }
       .testimonials-section .testimonials-card .testimonials-people h4 {
@@ -300,7 +325,9 @@ table {
 
 @media only screen and (max-width: 540px) {
   .testimonials-section {
-    padding: 30px 10px; } }
+    padding: 30px 10px; }
+    .testimonials-section h2 {
+      font-size: 12vw; } }
 
 .facts {
   color: #212121;
@@ -316,3 +343,44 @@ table {
     font-size: 22px;
     font-weight: 400;
     line-height: 32px; }
+
+footer {
+  padding-top: 140px;
+  background-image: url("../img/footer-background.png");
+  background-size: cover;
+  font-family: "Asap", sans-serif; }
+  footer .short-white-line {
+    width: 60px;
+    height: 4px;
+    background-color: #c1c1c1; }
+  footer h2 {
+    padding: 20px 0;
+    color: #efeff0;
+    font-size: 46px;
+    font-weight: bold; }
+  footer form {
+    margin: auto;
+    padding: 15px;
+    max-width: 780px; }
+    footer form .input-text {
+      margin: 16px;
+      padding: 10px;
+      display: inline-block;
+      width: calc(50% - 38px);
+      height: 55px; }
+    footer form textarea {
+      margin: auto;
+      padding: 15px;
+      display: block;
+      width: 95%;
+      height: 200px;
+      max-width: 750px; }
+    footer form .submit-btn {
+      margin: 40px 0;
+      width: 123px;
+      height: 50px; }
+    footer form .go-head-btn {
+      position: absolute;
+      right: 40px;
+      padding: 15px 20px;
+      background-color: #fff; }

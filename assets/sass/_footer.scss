@@ -1,0 +1,49 @@
+@import "variables";
+footer {
+  padding-top: 140px;
+  background-image: url("../img/footer-background.png");
+  background-size: cover;
+  font-family: $font-asap;
+  .short-white-line {
+    width: 60px;
+    height: 4px;
+    background-color: #c1c1c1;
+  }
+  h2{
+    padding: 20px 0;
+    color: #efeff0;
+    font-size: 46px;
+    font-weight: bold;
+  }
+  form {
+    margin: auto;
+    padding: 15px;
+    max-width: 780px;
+    .input-text {
+      margin: 16px;
+      padding: 10px;
+      display: inline-block;
+      width: calc(50% - 38px);
+      height: 55px;
+    }
+    textarea {
+      margin: auto;
+      padding: 15px;
+      display: block;
+      width: 95%;
+      height: 200px;
+      max-width: 750px;
+    }
+    .submit-btn {
+      margin: 40px 0;
+      width: 123px;
+      height: 50px;
+    }
+    .go-head-btn {
+      position: absolute;
+      right: 40px;
+      padding: 15px 20px;
+      background-color: #fff;
+    }
+  }
+}

@@ -42,8 +42,37 @@
     }
   }
 }
+.social-container {
+  padding-bottom: 20px;
+  border-top: 1px solid white;
+  ul {
+    padding: 0;
+    list-style: none;
+    li {
+      padding: 5px;
+    }
+  }
+  a {
+    padding: 10px;
+    color: black;
+    background-color: white;
+    &:hover {
+      text-decoration: none;
+      color: white;
+      background-color: #0084b4;
+    }
+  }
+  p {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+  }
+}
 @media only screen and (max-width: 540px) {
   .portfolio-section {
     padding: 30px 10px;
+    h2 {
+      font-size: 15vw;
+    }
   }
 }
