@@ -1,20 +1,131 @@
+//RESET STYLES
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1.2;
+}
+ol {
+  padding-left: 1.4em;
+  list-style: decimal;
+}
+ul {
+  padding-left: 1.4em;
+  list-style: square;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 @import "variables";
 
-.test-class {
-  color: blueviolet;
-  transition: background-color 1s ease-in;
-  border-radius: 10px;
-  padding: 10px;
-  text-align: center;
-
-  &:hover {
-    background-color: green;
+//HEADER BLOCK
+header {
+  background-image: url("../img/header-background-img.png");
+  background-size: cover;
+}
+.container {
+  padding: 0;
+  max-width: 1170px;
+}
+.row {
+  margin: 0;
+}
+.header-logo {
+  padding: $nav-logo-padding 0;
+  a{
+    text-decoration: none;
+    color: #000;
+    img {
+      margin: 5px;
+    }
+    h1 {
+      margin: 5px;
+      font-size: 14px;
+      font-weight: 300;
+    }
+    p {
+      font-size: 4px;
+      font-weight: 400;
+    }
   }
 }
-p {
-  color: red;
-  font-size: 25px;
+.header-nav {
+  padding: $nav-logo-padding 0;
+  font-size: 16px;
+  ul {
+    li {
+      a {
+        padding: 6px 5px;
+        color: #4d4d4d;
+        &:hover {
+          color: #999999;
+        }
+        &:active {
+          border-bottom: 2px solid #4d4d4d;
+        }
+      }
+    }
+  }
+  .active {
+    border-bottom: 2px solid #4d4d4d;
+  }
 }
-div p {
-  font-size: $small-font-size;
+.header-hero {
+  background: url("../img/hero-background.png") no-repeat top right;
+  background-size: 85%;
+  h1{
+    margin-top: 150px;
+    color: #4d4d4d;
+    font-family: $font-asap;
+    font-size: 90px;
+    font-weight: 500;
+  }
+  p {
+    opacity: 0.54;
+    color: #4d4d4d;
+    font-family: $font-asap;
+    font-size: 22px;
+  }
+  form {
+    margin: 20px 5px 250px;
+  }
+}
+
+
+
+@media only screen and (max-width: 540px) {
+  .header-hero{
+    background-size: 150%;
+    h1 {
+      margin-top: 20px;
+      font-size: 20vw;
+    }
+    form {
+      margin: 20px 5px 100px;
+    }
+  }
 }
