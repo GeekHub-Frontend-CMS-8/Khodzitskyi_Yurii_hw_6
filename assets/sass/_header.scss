@@ -1,4 +1,4 @@
-
+@import "variables";
 //HEADER BLOCK
 header {
   background-image: url("../img/header-background-img.png");
@@ -79,7 +79,7 @@ header {
   font-family: $font-asap;
   font-size: 16px;
   font-weight: 500;
-  border: 1px solid #4d4d4d;
+  border: $button-border;
   border-radius: 0;
   &:hover {
     //fixing border on :hover
