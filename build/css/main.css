@@ -250,3 +250,54 @@ table {
 @media only screen and (max-width: 540px) {
   .portfolio-section {
     padding: 30px 10px; } }
+
+.testimonials-section {
+  padding: 110px 0; }
+  .testimonials-section h2 {
+    padding: 15px 0;
+    color: #717171;
+    font-family: "Asap", sans-serif;
+    font-size: 46px;
+    font-weight: 900;
+    line-height: 49px; }
+  .testimonials-section .testimonials-card {
+    margin-top: 30px;
+    padding: 40px;
+    max-width: 950px;
+    border: 1px solid black; }
+    .testimonials-section .testimonials-card .testimonials-people {
+      max-width: 760px;
+      text-transform: uppercase; }
+      .testimonials-section .testimonials-card .testimonials-people img {
+        padding: 4px;
+        float: left; }
+      .testimonials-section .testimonials-card .testimonials-people h4 {
+        color: #212121;
+        font-family: "Asap", sans-serif;
+        font-size: 30px;
+        font-weight: 500; }
+      .testimonials-section .testimonials-card .testimonials-people em {
+        color: #212121;
+        font-family: "Asap", sans-serif;
+        font-size: 12px; }
+      .testimonials-section .testimonials-card .testimonials-people p {
+        opacity: 0.6;
+        color: #212121;
+        font-family: "Asap", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28px; }
+
+.testimonials-slider-buttons {
+  padding: 30px 0 0 0; }
+  .testimonials-slider-buttons a {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    border: 1px solid black; }
+  .testimonials-slider-buttons .testimonials-card-selected {
+    background-color: black; }
+
+@media only screen and (max-width: 540px) {
+  .testimonials-section {
+    padding: 30px 10px; } }

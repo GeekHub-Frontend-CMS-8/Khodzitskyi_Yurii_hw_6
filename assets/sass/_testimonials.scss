@@ -1,0 +1,58 @@
+@import "variables";
+.testimonials-section {
+  padding: $padding-top-bottom-big;
+  h2 {
+    padding: 15px 0;
+    @include h2-section;
+  }
+  .testimonials-card {
+    margin-top: 30px;
+    padding: 40px;
+    max-width: 950px;
+    border: 1px solid black;
+    .testimonials-people {
+      max-width: 760px;
+      text-transform: uppercase;
+      img {
+        padding: 4px;
+        float: left;
+      }
+      h4 {
+        color: #212121;
+        font-family: $font-asap;
+        font-size: 30px;
+        font-weight: 500;
+      }
+      em {
+        color: #212121;
+        font-family: $font-asap;
+        font-size: 12px;
+      }
+      p {
+        opacity: 0.6;
+        color: #212121;
+        font-family: $font-asap;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28px;
+      }
+    }
+  }
+}
+.testimonials-slider-buttons {
+  padding: 30px 0 0 0;
+  a {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    border: 1px solid black;
+  }
+  .testimonials-card-selected {
+    background-color: black;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .testimonials-section {
+    padding: 30px 10px;
+  }
+}
