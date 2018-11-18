@@ -84,8 +84,8 @@ header {
 
 .short-top-line {
   margin-bottom: 10px;
-  max-width: 60px;
-  border: 2px solid #4d4d4d; }
+  width: 60px;
+  border: 2px solid #212121; }
 
 .about-me-section {
   padding: 110px 0; }
@@ -121,7 +121,7 @@ header {
 
 @media only screen and (max-width: 540px) {
   .about-me-section {
-    padding: 30px; }
+    padding: 30px 10px; }
     .about-me-section h2 {
       max-width: 100%; }
     .about-me-section p {
@@ -165,3 +165,27 @@ table {
   content: "";
   clear: both;
   display: table; }
+
+.services {
+  background-color: #f6f6f6;
+  padding: 110px 0;
+  text-align: center; }
+  .services h2 {
+    color: #717171;
+    font-family: "Asap", sans-serif;
+    font-size: 46px;
+    font-weight: 900;
+    line-height: 49px; }
+  .services .services-list {
+    margin-top: 80px; }
+    .services .services-list h3 {
+      padding: 10px 0;
+      color: #4d4d4d;
+      font-family: "Asap", sans-serif;
+      font-size: 24px; }
+
+@media only screen and (max-width: 540px) {
+  .services {
+    padding: 30px 10px; }
+    .services .services-list {
+      margin-top: 30px; } }

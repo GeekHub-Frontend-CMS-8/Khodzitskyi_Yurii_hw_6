@@ -2,21 +2,17 @@
 //About me section
 .short-top-line {
   margin-bottom: 10px;
-  max-width: 60px;
-  border: 2px solid #4d4d4d;
+  width: 60px;
+  border: 2px solid #212121;
 }
 .about-me-section {
-  padding: 110px 0;
+  padding: $padding-top-bottom-big;
   img{
     width: 100%;
   }
   h2 {
     max-width: 70%;
-    color: #717171;
-    font-family: $font-asap;
-    font-size: 46px;
-    font-weight: 900;
-    line-height: 49px;
+    @include h2-section
   }
   p {
     max-width: 85%;
@@ -44,7 +40,7 @@
 }
 @media only screen and (max-width: 540px) {
   .about-me-section {
-    padding: 30px;
+    padding: 30px 10px;
     h2 {
       max-width: 100%;
     }

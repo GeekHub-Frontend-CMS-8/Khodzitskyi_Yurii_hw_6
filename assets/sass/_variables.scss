@@ -4,3 +4,11 @@ $font-asap: 'Asap', sans-serif;
 $button-padding-vertical: 20px;
 $button-padding-horizontal: 30px;
 $button-border: 1px solid #4d4d4d;
+$padding-top-bottom-big: 110px 0;
+@mixin h2-section {
+  color: #717171;
+  font-family: $font-asap;
+  font-size: 46px;
+  font-weight: 900;
+  line-height: 49px;
+}
